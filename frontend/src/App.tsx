@@ -1,11 +1,17 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import TechStack from "./components/TechStack";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <div className="p-10 rounded-xl bg-white shadow-2xl">
-        <p className="text-green-500 text-2xl font-bold tracking-wide">
-          Tailwind v3 is working 🎉
-        </p>
-      </div>
+    <div className="min-h-screen font-body bg-white selection:bg-brand-teal selection:text-white">
+      <Navbar />
+      <Hero />
+      <Features />
+      <TechStack />
+      <Footer />
     </div>
   );
 }
